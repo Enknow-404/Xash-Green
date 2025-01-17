@@ -372,7 +372,7 @@ def menu():
                         elif mthd in ['2','02']:
                             crack_submit.submit(apii2,ids,names,passlist)
                         elif mthd in ['3','03']:
-                            crack_submit.submit(api3,ids,names,passlist)                                                
+                            crack_submit.submit(apii3,ids,names,passlist)                                                
                 clear()
                 print('\033[1;37m[><]\033[1;32m The process has completed')
                 print('\033[1;37m[><]\033[1;32m Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
@@ -885,7 +885,7 @@ def approval():
   except KeyboardInterrupt:exit()
   except Exception as e:e=base64.b16encode(str(e).encode('ascii'));print('Something went wrong error code : '+e.decode('ascii'));menu()
 
-approval()
+menu()
 exit()
 while True: requests
 raise KeyError ("XD")
